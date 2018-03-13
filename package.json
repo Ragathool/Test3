@@ -1,0 +1,27 @@
+{
+  "name": "installdependencies",
+  "version": "1.0.0",
+  "description": "example description",
+  "main": "code.js",
+  "scripts": {
+    "printme": "echo \"This is a meaningless script\"",
+    "styles": "lessc styles.less styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ragathool/Test3.git"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "Andreas Sundin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ragathool/Test3/issues"
+  },
+  "homepage": "https://github.com/Ragathool/Test3#readme",
+  "devDependencies": {
+    "less": "^3.0.1"
+  },
+  "dependencies": {}
+}
