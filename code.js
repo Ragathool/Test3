@@ -1,3 +1,8 @@
+let movieData = require("./data");
+let $ = require("jquery");
+
+
+
 function renderMovie(movie){
     $("#title").text(movieData.title);
     $("#info").text(movieData.info);
@@ -29,10 +34,10 @@ function changeStarRating(rating)
 
     let rating = star.attr("starid");
 
-    changeStarRating(rating);
+    changeStarRating(rating);                                
   });
   
-
+console.log("Hej");
 renderMovie(movieData);
    
 
