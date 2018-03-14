@@ -1,17 +1,16 @@
 import {movieData} from "./data";
 import * as $ from "jquery";
+import { Review } from "./interfaces";
 
-
-
-function renderMovie(movie){
-    $("#title").text(movieData.title);
-    $("#info").text(movieData.info);
-    $(".poster").attr("src", movieData.image);
+function renderMovie(data: Review){
+    $("#title").text(data.title);
+    $("#info").text(data.info);
+    $(".poster").attr("src", data.image);
 
     $("#actors").empty();
-    for(let i=0; i<movieData.actors.length; i++)
+    for(let i=0; i<data.actors.length; i++)
     {
-      $("#actors").append("<li>" + movieData.actors[i] + "</li>");
+      $("#actors").append("<li>" + data.actors[i] + "</li>");
     }
   }
 
