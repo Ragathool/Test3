@@ -26,7 +26,7 @@ function changeStarRating(rating)
     }
   }
 
-  $(".stars").on("click", "span", function(e)
+  $(".stars").on("click", "span", (e) => 
   {
       console.log("ClickEvent called");
     let star = $(e.target);
